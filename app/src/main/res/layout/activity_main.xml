@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="biz.burli.appid.MainActivity"
+    android:background="@drawable/gradient_turk">
+
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_number"
+        android:layout_marginTop="148dp"
+        android:fontFamily="sans-serif"
+        android:textSize="70sp"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#fff" />
+
+    <Button
+        android:text="Generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_generate"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="91dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:elevation="0dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:background="@drawable/buttonshape"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/icon_setting"
+        android:id="@+id/iv_menu"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/arrow"
+        android:id="@+id/iv_arrow"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:id="@+id/tabelle"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/iv_arrow"
+        android:layout_alignLeft="@+id/btn_generate"
+        android:layout_alignStart="@+id/btn_generate"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_min"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="100000"
+                android:ems="10"
+                android:id="@+id/et_min"
+                android:background="@android:color/transparent"
+                android:layout_below="@+id/tv_max"
+/>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:text="max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_max"
+                android:layout_marginRight="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:text="999999"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:id="@+id/et_max"
+                android:layout_marginBottom="29dp" />
+
+
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>
